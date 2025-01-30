@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import { ChevronRight, ChevronLeft } from "lucide-react";
@@ -44,14 +44,6 @@ const CommentSection = () => {
 
     return (
         <div className="relative bg-pink-50 py-12 px-6 text-center overflow-hidden w-full h-[400px] flex justify-center items-center">
-            {/* Background Image */}
-            <div className="absolute inset-0 z-0 flex justify-center items-center">
-                <img
-                    src="/decoration.png"
-                    alt="Background"
-                    className="w-[50%] h-full"
-                />
-            </div>
 
             <div className="relative z-10 text-center">
                 {/* Stars */}
@@ -65,8 +57,19 @@ const CommentSection = () => {
             </div>
 
             {/* Navigation Buttons */}
-            <div className="absolute top-1/2 left-0 right-0 px-4 transform -translate-y-1/2 flex justify-between">
+            {/* Desktop version */}
+            <div className="hidden md:flex absolute top-1/2 left-0 right-0 px-4 transform -translate-y-1/2 flex justify-between">
                 <button onClick={prevComment} className="p-2 bg-white rounded-full shadow-md">
+                    <ChevronLeft size={24} />
+                </button>
+                <button onClick={nextComment} className="p-2 bg-white rounded-full shadow-md">
+                    <ChevronRight size={24} />
+                </button>
+            </div>
+
+            {/* Mobile version */}
+            <div className="md:hidden flex justify-center w-full absolute bottom-4 left-1/2 transform -translate-x-1/2 ">
+                <button onClick={prevComment} className="p-2 bg-white rounded-full shadow-md mx-4">
                     <ChevronLeft size={24} />
                 </button>
                 <button onClick={nextComment} className="p-2 bg-white rounded-full shadow-md">
