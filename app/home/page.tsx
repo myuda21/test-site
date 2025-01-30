@@ -14,7 +14,6 @@ const Landing = () => {
         
         {/* BANNER SECTION */}
         <div className="relative w-full h-[500px] flex justify-center text-center text-white py-6 mb-12">
-          {/* Background Image */}
           <Image
             src="/home-menu-image.png" // Ganti dengan gambar yang sesuai
             alt="Megan Mattress"
@@ -43,8 +42,17 @@ const Landing = () => {
           </div>
         </div>
 
-        {/* IMAGE AND TEXT SECTION */}
-        <div className="relative w-full max-w-6xl mx-auto flex flex-col-reverse lg:flex-row-reverse items-center bg-white py-6 mb-12">
+        {/* CARD ITEM SECTION */}
+        <div className="max-w-6xl mx-auto px-4 py-8 mb-12">
+          <div className="grid grid-cols-3 gap-4 mt-6">
+            <CardItem image="/shop-adult.png" alt="Shop Adult" text="Shop Adult" />
+            <CardItem image="/shop-kids.png" alt="Shop Kids" text="Shop Kids" />
+            <CardItem image="/shop-guest-room.png" alt="Shop Guest Room" text="Shop Guest Room" />
+          </div>
+        </div>
+
+                {/* IMAGE AND TEXT SECTION */}
+                <div className="relative w-full max-w-6xl mx-auto flex flex-col-reverse lg:flex-row-reverse items-center bg-white py-6 mb-12">
           <div className="relative w-full lg:w-2/3 h-80 lg:h-[500px]">
             <Image
               src="/shop-accessories.png" // Ganti dengan gambar asli Anda
@@ -65,15 +73,6 @@ const Landing = () => {
             <button className="mt-6 flex items-center gap-2 border border-gray-900 rounded-full px-6 py-3 text-gray-900 font-semibold hover:bg-gray-100 transition">
               SHOP ACCESSORIES <span className="text-lg">→</span>
             </button>
-          </div>
-        </div>
-
-        {/* CARD ITEM SECTION */}
-        <div className="max-w-6xl mx-auto px-4 py-8 mb-12">
-          <div className="grid grid-cols-3 gap-4 mt-6">
-            <CardItem image="/shop-adult.png" alt="Shop Adult" text="Shop Adult" />
-            <CardItem image="/shop-kids.png" alt="Shop Kids" text="Shop Kids" />
-            <CardItem image="/shop-guest-room.png" alt="Shop Guest Room" text="Shop Guest Room" />
           </div>
         </div>
 
