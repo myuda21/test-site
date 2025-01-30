@@ -15,7 +15,7 @@ const Landing = () => {
         {/* BANNER SECTION */}
         <div className="relative w-full h-[500px] flex justify-center text-center text-white py-6 mb-12">
           <Image
-            src="/home-menu-image.png" // Ganti dengan gambar yang sesuai
+            src="/home-menu-image.png"
             alt="Megan Mattress"
             layout="fill"
             objectFit="cover"
