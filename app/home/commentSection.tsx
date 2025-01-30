@@ -44,6 +44,14 @@ const CommentSection = () => {
 
     return (
         <div className="relative bg-pink-50 py-12 px-6 text-center overflow-hidden w-full h-[400px] flex justify-center items-center">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0 flex justify-center items-center">
+                <img
+                    src="/decoration.png"
+                    alt="Background"
+                    className="w-[50%] h-full"
+                />
+            </div>
 
             <div className="relative z-10 text-center">
                 {/* Stars */}
