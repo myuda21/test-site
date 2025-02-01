@@ -55,7 +55,7 @@ const Landing = () => {
                 <div className="relative w-full max-w-6xl mx-auto flex flex-col-reverse lg:flex-row-reverse items-center bg-white py-6 mb-12">
           <div className="relative w-full lg:w-2/3 h-80 lg:h-[500px]">
             <Image
-              src="/shop-accessories.png" // Ganti dengan gambar asli Anda
+              src="/shop-accessories.png"
               alt="Family on Mattress"
               layout="fill"
               objectFit="cover"
