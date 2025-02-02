@@ -58,7 +58,7 @@ const CommentSection = () => {
 
             {/* Navigation Buttons */}
             {/* Desktop version */}
-            <div className="hidden md:flex absolute top-1/2 left-0 right-0 px-4 transform -translate-y-1/2 flex justify-between">
+            <div className="hidden md:flex absolute top-1/2 left-0 right-0 px-4 transform -translate-y-1/2 justify-between">
                 <button onClick={prevComment} className="p-2 bg-white rounded-full shadow-md">
                     <ChevronLeft size={24} />
                 </button>
@@ -68,7 +68,7 @@ const CommentSection = () => {
             </div>
 
             {/* Mobile version */}
-            <div className="md:hidden flex justify-center w-full absolute bottom-4 left-1/2 transform -translate-x-1/2 ">
+            <div className="md:hidden flex justify-center w-full absolute bottom-16 left-1/2 transform -translate-x-1/2 ">
                 <button onClick={prevComment} className="p-2 bg-white rounded-full shadow-md mx-4">
                     <ChevronLeft size={24} />
                 </button>
