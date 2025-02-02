@@ -4,6 +4,8 @@ import CardItem from "../component/cardItem";
 import Styles from './postpage.module.css'
 import Footer from "./footer";
 import CommentSection from "./commentSection";
+import "./postpage.module.css"
+import { ArrowRight } from "lucide-react";
 
 const Landing = () => {
   return (
@@ -11,7 +13,7 @@ const Landing = () => {
       {/* NAVBAR SECTION */}
       <Navbar />
       <div className="max-w-6xl mx-auto px-4 py-8">
-        
+
         {/* BANNER SECTION */}
         <div className="relative w-full h-[500px] flex justify-center text-center text-white py-6 mb-12">
           <Image
@@ -51,8 +53,8 @@ const Landing = () => {
           </div>
         </div>
 
-                {/* IMAGE AND TEXT SECTION */}
-                <div className="relative w-full max-w-6xl mx-auto flex flex-col-reverse lg:flex-row-reverse items-center bg-white py-6 mb-12">
+        {/* IMAGE AND TEXT SECTION */}
+        <div className="relative w-full max-w-6xl mx-auto flex flex-col-reverse lg:flex-row-reverse items-center bg-white py-6 mb-12">
           <div className="relative w-full lg:w-2/3 h-80 lg:h-[500px]">
             <Image
               src="/shop-accessories.png"
@@ -70,32 +72,35 @@ const Landing = () => {
             </p>
 
             {/* CTA Button */}
-            <button className="mt-6 flex items-center gap-2 border border-gray-900 rounded-full px-6 py-3 text-gray-900 font-semibold hover:bg-gray-100 transition">
-              SHOP ACCESSORIES <span className="text-lg">→</span>
-            </button>
+            <div className='relative' style={{ paddingTop: '0.001rem', paddingBottom: '0.001rem', }}> {/* GABOLEH DIGANGGU GUGAT SUSAH MENYESUAIKANNYA */}
+              <div className='absolute border-4 border-white z-5 w-3/4 h-full'></div>
+              <button className="border rounded-full border-black p-2 w-3/4 flex justify-center my-0.5">
+                MORE ABOUT US <span className='mx-3'> | </span> <ArrowRight />
+              </button>
+            </div>
           </div>
         </div>
 
         {/* COMMENT SECTION */}
-        <div className="relative">
+        <div className="relative flex-col">
           {/* Comment Section */}
-          <div className="relative z-20">
+          <div className="relative">
             <CommentSection />
           </div>
 
           {/* Image Section */}
-          <div className="relative flex justify-center">
+          <div className="relative flex z-20 -mt-12">
             <img
               src="/mix-ins.png"
               alt="Handcrafted Mattress"
               className="w-[90%] h-auto mx-auto"
             />
-            
+
             {/* Text Overlay */}
-            <div className="absolute inset-0 flex items-center justify-end bg-black/30 w-[90%] h-auto mx-auto">
-              <div className="text-white text-right p-4 max-w-[40%]">
-                <h2 className="text-xl font-semibold">Handcrafted Mattresses</h2>
-                <p className="mt-2 text-lg">
+            <div className="absolute inset-0 flex items-center justify-center sm:justify-end bg-black/30 w-[90%] h-auto mx-auto p-4">
+              <div className="text-white text-center sm:text-right p-4 w-full sm:max-w-[40%]">
+                <h2 className="text-lg sm:text-xl font-semibold">Handcrafted Mattresses</h2>
+                <p className="mt-2 text-sm sm:text-lg">
                   Factory-Direct Pricing, Family Owned for over 50 years.
                 </p>
                 <button className="text-xs mt-4 px-6 py-3 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-200 transition">
@@ -107,21 +112,21 @@ const Landing = () => {
         </div>
 
         {/* JOIN OUR NEWSLETTER SECTION */}
-        <div className="bg-white p-8 left-4 right-4 lg:-mr-10 mx-4 my-6 flex flex-col lg:flex-row items-center lg:justify-between gap-6 mb-12">
+        <div className="bg-white p-8 mx-4 my-6 flex flex-col lg:flex-row items-center lg:justify-between gap-6 mb-12">
           <div className="text-center lg:text-left">
-            <h2 className="text-xl font-semibold text-gray-900">Join Our Newsletter</h2>
-            <p className="mt-2 text-gray-700">
+            <h2 className="text-lg sm:text-xl font-semibold text-gray-900">Join Our Newsletter</h2>
+            <p className="mt-2 text-gray-700 text-sm sm:text-base">
               We deliver only the best updates and specials to you, and we never spam.
             </p>
           </div>
 
-          <div className="flex w-full lg:w-1/2 items-center gap-3">
+          <div className="flex flex-wrap w-full lg:w-1/2 items-center gap-3">
             <input
               type="email"
               placeholder="Enter your email address..."
-              className="flex-grow px-4 py-3 rounded-full bg-gray-100 text-gray-700 focus:outline-none"
+              className="flex-grow px-4 py-3 rounded-full bg-gray-100 text-gray-700 focus:outline-none w-full sm:w-auto"
             />
-            <button className="bg-gray-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition w-1/3 lg:w-auto">
+            <button className="bg-gray-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition w-full sm:w-auto">
               JOIN NEWSLETTER
             </button>
           </div>
