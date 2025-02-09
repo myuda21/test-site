@@ -8,6 +8,29 @@ const ContactUs = () => {
     <div className="bg-white">
       {/* NAVBAR SECTION */}
       <Navbar />
+      {/* BANNER SECTION */}
+      <div className='mx-auto px-4'>
+        <div className="relative w-full h-[700px] flex justify-center text-center text-white p-14">
+          <Image
+            src="/adult-room.png"
+            alt="Megan Mattress"
+            layout="fill"
+            objectFit="cover"
+            className="absolute inset-0 w-full"
+          />
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black bg-opacity-5"></div>
+
+          {/* Content */}
+          <div className="relative z-10 px-6">
+            <h1 className="text-3xl font-semibold md:text-4xl">Contact us.</h1>
+            <p className="mt-3 text-lg md:text-xl">
+              We’d be delighted to hear from you.
+            </p>
+          </div>
+        </div>
+      </div>
 
       <div className="max-w-5xl mx-auto px-4 py-16">
         {/* Title */}
