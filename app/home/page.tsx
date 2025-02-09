@@ -11,12 +11,11 @@ const Landing = () => {
     <div className='bg-white'>
       {/* NAVBAR SECTION */}
       <Navbar />
-      <div className="max-w-6xl mx-auto px-4 py-8">
-
+      <div className="mx-auto px-4">
         {/* BANNER SECTION */}
-        <div className="relative w-full h-[500px] flex justify-center text-center text-white py-6 mb-12">
+        <div className="relative w-full h-[700px] flex justify-center text-center text-white py-6 mb-12">
           <Image
-            src="/home-menu-image.png"
+            src="/home-menu.png"
             alt="Megan Mattress"
             layout="fill"
             objectFit="cover"
