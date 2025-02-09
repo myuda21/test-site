@@ -19,10 +19,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md py-2 px-4 z-50">
-  <div className="max-w-6xl mx-auto flex justify-between items-center">
+    <nav className="bg-white py-2 px-4 z-50">
+  <div className="mx-auto flex justify-between items-center">
     {/* Logo */}
-    <Image src="/logoQSS.jpg" alt="Logo" width={120} height={50} />
+    <Link href="/home"><Image src="/logoQSS.jpg" alt="Logo" width={120} height={50} /></Link>
 
     {/* Mobile Menu */}
     <div className="md:hidden flex items-center">
