@@ -1,82 +1,85 @@
-import Navbar from '../home/navbar'
+import Navbar from '../home/navbar';
 import Image from "next/image";
-import CardItem from "../component/cardItem";
-import Styles from './postpage.module.css'
 import Footer from "../footer";
-import "./postpage.module.css"
-import { ArrowRight } from "lucide-react";
+import { Phone, MapPin, Clock } from "lucide-react";
 
-const Landing = () => {
+const ContactUs = () => {
   return (
-    <div className='bg-white'>
+    <div className="bg-white">
       {/* NAVBAR SECTION */}
       <Navbar />
-      <div className="max-w-6xl mx-auto px-4 py-8">
 
-        {/* BANNER SECTION */}
-        <div className="relative w-full h-[500px] flex justify-center text-center text-white py-6 mb-12">
-          <Image
-            src="/home-menu-image.png"
-            alt="Megan Mattress"
-            layout="fill"
-            objectFit="cover"
-            className="absolute inset-0 w-full h-full"
-          />
+      <div className="max-w-5xl mx-auto px-4 py-16">
+        {/* Title */}
+        <h2 className="text-2xl font-semibold text-center mb-6">Quality Sleep Shop</h2>
 
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-5"></div>
-
-          {/* Content */}
-          <div className="relative z-10 px-6">
-            <h1 className="text-3xl font-semibold md:text-4xl">Contact us.</h1>
-            <p className="mt-3 text-lg md:text-xl">
-            We’d be delighted to hear from you.
-            </p>
-          </div>
-        </div>
-
-        {/* CARD ITEM SECTION */}
-        <div className="max-w-6xl mx-auto px-4 py-8 mb-12">
-          <div className="grid grid-cols-3 gap-4 mt-6">
-            <CardItem image="/shop-adult.png" alt="Shop Adult" text="Shop Adult" />
-            <CardItem image="/shop-kids.png" alt="Shop Kids" text="Shop Kids" />
-            <CardItem image="/shop-guest-room.png" alt="Shop Guest Room" text="Shop Guest Room" />
-          </div>
-        </div>
-
-        {/* IMAGE AND TEXT SECTION */}
-        <div className="relative w-full max-w-6xl mx-auto flex flex-col-reverse lg:flex-row-reverse items-center bg-white py-6 mb-12">
-          <div className="relative w-full lg:w-2/3 h-80 lg:h-[500px]">
-            <Image
-              src="/shop-accessories.png"
-              alt="Family on Mattress"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-
-          {/* Text Box (Card) */}
-          <div className="relative lg:absolute lg:w-1/3 bg-white p-8 top-0 lg:top-1/2 left-4 right-4 lg:-mr-10 -translate-y-0 lg:-translate-y-1/2 mx-4 my-6">
-            <h2 className="text-3xl font-semibold text-gray-900">Sleep soundly.</h2>
-            <p className="mt-4 text-gray-700">
-              Sheets that are more than just soft. They feel so good, you never want to get up.
-            </p>
-
-            {/* CTA Button */}
-            <div className='relative' style={{ paddingTop: '0.001rem', paddingBottom: '0.001rem', }}> {/* GABOLEH DIGANGGU GUGAT SUSAH MENYESUAIKANNYA */}
-              <div className='absolute border-4 border-white z-5 w-3/4 h-full'></div>
-              <button className="border rounded-full border-black p-2 w-3/4 flex justify-center my-0.5">
-                MORE ABOUT US <span className='mx-3'> | </span> <ArrowRight />
-              </button>
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-12">
+          {/* Contact Information */}
+          <div className="flex flex-col gap-4 w-full md:w-1/2 text-gray-800">
+            <div className="flex items-start gap-3">
+              <MapPin className="text-gray-500 mt-1" />
+              <p className="text-lg">
+                <strong>1519 W. 55th Street</strong> <br />
+                La Grange Highlands, IL 60525
+              </p>
             </div>
+
+            <div className="flex items-center gap-3">
+              <Phone className="text-gray-500" />
+              <p className="text-lg">(708) 246-2224</p>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <Clock className="text-gray-500 mt-1" />
+              <p className="text-lg">
+                Monday - Friday: 10am-6pm <br />
+                Saturday: 10am-5pm | Sunday: 11am-4pm
+              </p>
+            </div>
+
+            <p className="text-gray-500 text-sm mt-2">
+              *We deliver within a 40 mile radius, fees apply outside of 10 miles from our store.
+            </p>
+          </div>
+
+          {/* Contact Form */}
+          <div className="w-full md:w-1/2">
+            <form>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                className="w-full p-3 rounded-lg border border-gray-300 mb-3 focus:outline-none focus:ring-2 focus:ring-gray-400 bg-gray-100"
+              />
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                className="w-full p-3 rounded-lg border border-gray-300 mb-3 focus:outline-none focus:ring-2 focus:ring-gray-400 bg-gray-100"
+              />
+              <textarea
+                placeholder="Message"
+                className="w-full p-3 rounded-lg border border-gray-300 mb-3 h-24 focus:outline-none focus:ring-2 focus:ring-gray-400 bg-gray-100"
+              ></textarea>
+              <button className="w-full bg-black text-white py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-gray-800 transition">
+                SEND
+              </button>
+            </form>
           </div>
         </div>
+      </div>
+
+      {/* Map Section */}
+      <div className="w-full h-96 mt-10">
+        <iframe
+          className="w-full h-full rounded-lg shadow-md"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.349048267788!2d-87.85941682339183!3d41.79052867123625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e48b3c4f24965%3A0xc7878b67841fc1cb!2s1519%20W%2055th%20St%2C%20La%20Grange%20Highlands%2C%20IL%2060525!5e0!3m2!1sen!2sus!4v1707513362201!5m2!1sen!2sus"
+          loading="lazy"
+        ></iframe>
       </div>
 
       {/* FOOTER SECTION */}
       <Footer />
     </div>
   );
-}
+};
 
-export default Landing
+export default ContactUs;
