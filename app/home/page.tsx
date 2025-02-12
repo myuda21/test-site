@@ -68,9 +68,9 @@ const Landing = () => {
             <p className="mt-4 text-gray-700">
               Sheets that are more than just soft. They feel so good, you never want to get up.
             </p>
-
+            
             {/* CTA Button */}
-            <div className='relative' style={{ paddingTop: '0.001rem', paddingBottom: '0.001rem', }}> {/* GABOLEH DIGANGGU GUGAT SUSAH MENYESUAIKANNYA */}
+            <div className='relative my-4' style={{ paddingTop: '0.001rem', paddingBottom: '0.001rem', }}> {/* GABOLEH DIGANGGU GUGAT SUSAH MENYESUAIKANNYA */}
               <div className='absolute border-4 border-white z-5 w-3/4 h-full'></div>
               <button className="border rounded-full border-black p-2 w-3/4 flex justify-center my-0.5">
                 MORE ABOUT US <span className='mx-3'> | </span> <ArrowRight />
