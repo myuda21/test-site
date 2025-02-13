@@ -1,9 +1,7 @@
 import Navbar from './navbar'
 import Image from "next/image";
 import CardItem from "../component/cardItem";
-import Styles from './postpage.module.css'
 import Footer from "../footer";
-import "./postpage.module.css"
 import { ArrowRight } from "lucide-react";
 
 const Landing = () => {
@@ -73,7 +71,7 @@ const Landing = () => {
             <div className='relative my-4' style={{ paddingTop: '0.001rem', paddingBottom: '0.001rem', }}> {/* GABOLEH DIGANGGU GUGAT SUSAH MENYESUAIKANNYA */}
               <div className='absolute border-4 border-white z-5 w-3/4 h-full'></div>
               <button className="border rounded-full border-black p-2 w-3/4 flex justify-center my-0.5">
-                MORE ABOUT US <span className='mx-3'> | </span> <ArrowRight />
+                SHOP ACCESSORIES <span className='mx-3'> | </span> <ArrowRight />
               </button>
             </div>
           </div>
