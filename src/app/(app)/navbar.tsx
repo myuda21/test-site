@@ -40,18 +40,18 @@ const Navbar = () => {
 
         {/* Menu untuk Desktop */}
         <div className="hidden md:flex items-center space-x-6">
-          <Link href="/mattresses" className="text-neutral-500 hover:text-black">Mattresses</Link>
-          <Link href="/accessories" className="text-neutral-500 hover:text-black">Accessories</Link>
-          <Link href="/platforms" className="text-neutral-500 hover:text-black">Platforms</Link>
-          <Link href="/article" className="text-neutral-500 hover:text-black">Article</Link>
+          <Link href="/mattresses" className="text-neutral-500 hover:text-black" style={{ fontFamily: 'Mulish, sans-serif', fontSize: '12px' }}>MATTRESSES</Link>
+          <Link href="/accessories" className="text-neutral-500 hover:text-black" style={{ fontFamily: 'Mulish, sans-serif', fontSize: '12px' }}>ACCESSORIES</Link>
+          <Link href="/platforms" className="text-neutral-500 hover:text-black" style={{ fontFamily: 'Mulish, sans-serif', fontSize: '12px' }}>PLATFORMS</Link>
+          <Link href="/article" className="text-neutral-500 hover:text-black" style={{ fontFamily: 'Mulish, sans-serif', fontSize: '12px' }}>ARTICLE</Link>
 
           {/* Dropdown Resources */}
           <div className="relative z-50">
             <button
               onClick={toggleFeaturesDropdown}
-              className="flex items-center gap-1 text-neutral-500 hover:text-black focus:outline-none"
+              className="flex items-center gap-1 text-neutral-500 hover:text-black focus:outline-none"  style={{ fontFamily: 'Mulish, sans-serif', fontSize: '12px' }}
             >
-              <span>Resources</span>
+              <span>RESOURCES</span>
               <IoIosArrowDown
                 className={`transform transition-transform ${isFeaturesOpen ? "rotate-0" : "rotate-180"}`}
               />
