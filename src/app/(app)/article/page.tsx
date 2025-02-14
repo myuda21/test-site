@@ -1,4 +1,4 @@
-import Navbar from '../home/navbar'
+import Navbar from '../navbar'
 import Footer from "../footer";
 import ArticleDetail from "./articleDetail";
 import SidebarSection from "./sidebarSection";

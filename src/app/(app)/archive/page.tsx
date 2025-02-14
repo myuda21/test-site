@@ -1,4 +1,4 @@
-import Navbar from '../home/navbar';
+import Navbar from '../navbar';
 import Footer from "../footer";
 import ListArticle from "./listArticle";
 import Image from "next/image";

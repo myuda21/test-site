@@ -1,6 +1,6 @@
 "use client";
 
-import Navbar from "../home/navbar";
+import Navbar from "../navbar";
 import Footer from "../footer";
 import ProductCard from "./productCard";
 import FilterBar from "./filterBar";

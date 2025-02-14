@@ -1,4 +1,4 @@
-import Navbar from '../home/navbar';
+import Navbar from '../navbar';
 import Image from "next/image";
 import Footer from "../footer";
 import { Phone, MapPin, Clock } from "lucide-react";

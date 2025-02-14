@@ -1,6 +1,6 @@
 "use client";
 
-import Navbar from "../home/navbar";
+import Navbar from "../navbar";
 import Image from "next/image";
 import Footer from "../footer";
 import CommentSection from "../commentSection";

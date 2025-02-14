@@ -1,6 +1,6 @@
-import Navbar from './navbar'
+import Navbar from '../navbar'
 import Image from "next/image";
-import CardItem from "../component/cardItem";
+import CardItem from "../../../components/cardItem";
 import Footer from "../footer";
 import { ArrowRight } from "lucide-react";
 

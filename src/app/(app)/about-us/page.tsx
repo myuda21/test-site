@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Navbar from "../home/navbar";
+import Navbar from "../navbar";
 import Image from "next/image";
 import Footer from "../footer";
 import { ArrowRight } from "lucide-react";
