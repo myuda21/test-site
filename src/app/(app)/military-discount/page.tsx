@@ -23,6 +23,11 @@ export default function MilitaryDiscount() {
                 <h1 className="text-3xl font-bold">Military Discount</h1>
                 <p className="text-lg">Our way of saying thanks.</p>
               </div>
+              {/* Right-side divider and text */}
+            <div className="absolute right-0 bottom-0 transform -translate-y-1/2 flex items-center -rotate-90 -mx-28">
+                <div className="w-56 h-0.5 bg-white mx-1"></div>
+                <p className="text-xs text-gray-300">Family Owned. American Made.</p>
+              </div>
             </div>
           </div>
         </div>
