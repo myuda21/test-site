@@ -5,7 +5,7 @@ import Footer from "../footer";
 import PromotionCard from './promotionCard';
 
 const promotions = [
-  { code: 'Honor', discount: 'Save $100', description: 'on our Latex Mattresses', image: '/wakeup.png' },
+  { code: 'Honor', discount: 'Save $100', description: 'on our Latex Mattresses', image: '/wakeup.png', details: "tes" },
   { code: 'New', discount: 'Save $50', description: 'on our New Mattresses', image: '/wakeup.png' },
   { code: 'Premium', discount: 'Save 25%', description: 'on our Premium Mattresses', image: '/wakeup.png' },
   { code: 'King', discount: 'Save $150', description: 'on our King Mattresses', image: '/wakeup.png' },
@@ -37,7 +37,7 @@ const PromotionsV2 = () => {
         <div className="flex justify-center mt-6">
           <button
             onClick={loadMore}
-            className="bg-black text-white py-3 px-6 rounded-lg font-semibold text-lg hover:bg-gray-800 transition-all"
+            className="bg-black text-white py-2 px-6 rounded-full font-semibold text-md hover:bg-gray-800 transition-all"
           >
             LOAD MORE
           </button>
