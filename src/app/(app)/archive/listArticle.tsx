@@ -65,7 +65,7 @@ const ListArticle = () => {
           <img
             src={article.image}
             alt={article.title}
-            className="w-full md:w-[300px] h-[200px] object-cover rounded-lg md:mr-6"
+            className="w-full md:w-[500px] h-[300px] object-cover md:mr-6"
           />
           <div className="mt-4 md:mt-0 w-full">
             <h2 className="text-xl font-bold">{article.title}</h2>
