@@ -58,7 +58,7 @@ const ProductImageCarousel = () => {
             </div>
 
       {/* Image Indicators */}
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center">
         {images.map((_, index) => (
           <button
             key={index}

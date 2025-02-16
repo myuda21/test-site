@@ -2,7 +2,7 @@ import React from "react";
 
 const FeaturesSection = () => {
   return (
-    <div className="flex justify-around bg-gray-800 text-white py-4 mt-8">
+    <div className="flex justify-around bg-gray-800 text-white py-10 mt-8">
       <div className="text-center">
         <p className="font-semibold">Made in the USA</p>
       </div>
