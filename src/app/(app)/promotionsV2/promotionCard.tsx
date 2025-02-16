@@ -32,7 +32,7 @@ const PromotionCard = ({ promo }: { promo: Promotion }) => {
                     className="w-full h-full object-cover"
                 />
                 {showDetails && (
-                    <div className="absolute inset-0 bg-white bg-opacity-60 flex items-center justify-center text-white p-3 text-sm">
+                    <div className="absolute inset-0 bg-white bg-opacity-60 flex items-center justify-center text-black p-3 text-sm">
                         {promo.details || "No additional details available."}
                     </div>
                 )}
