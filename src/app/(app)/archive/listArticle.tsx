@@ -71,7 +71,7 @@ const ListArticle = () => {
             <h2 className="text-xl font-bold">{article.title}</h2>
             <p className="text-gray-500">{article.date}</p>
             <p className="text-gray-700">{article.content}</p>
-            <a href="#" className="font-bold text-xs">
+            <a href="/article" className="font-bold text-xs">
               READ MORE &gt;
             </a>
           </div>
