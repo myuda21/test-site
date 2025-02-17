@@ -12,8 +12,16 @@ import Footer from "../footer";
 import Image from "next/image";
 import { FacebookIcon, InstagramIcon, TwitterIcon } from "lucide-react";
 import { ArrowRight } from "lucide-react";
+import ReviewList from "./reviewList";
 
 const ProductPage = () => {
+  
+const reviews = [
+  { name: "Laurie B.", comment: "So far, so good. It's very comfortable!", rating: 5, verified: true },
+  { name: "John D.", comment: "Great product, really helps with sleep.", rating: 4, verified: false },
+  { name: "John D.", comment: "Great product, really helps with sleep.", rating: 4, verified: true },
+  { name: "John D.", comment: "Great product, really helps with sleep.", rating: 4, verified: true },
+];
   return (
     <div className='bg-white'>
       {/* NAVBAR SECTION */}
@@ -65,6 +73,10 @@ const ProductPage = () => {
             <li>✅Exclusive build style prevents body impressions</li>
           </ul>
         </div>
+      </div>
+      
+      <div className="p-5">
+      <ReviewList reviews={reviews} />
       </div>
 
       <div className="flex items-center justify-between p-16 gap-16">
