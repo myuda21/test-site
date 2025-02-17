@@ -7,7 +7,7 @@ export default function MilitaryDiscount() {
   return (
     <div>
       <Navbar />
-      <div className="max-w-7xl mx-auto text-gray-900 px-5">
+      <div className="max-w-full mx-auto text-gray-900 px-5">
         
         {/* Header Section */}
         <div className="relative w-full h-[500px] mb-2">
@@ -24,8 +24,8 @@ export default function MilitaryDiscount() {
                 <p className="text-lg">Our way of saying thanks.</p>
               </div>
               {/* Right-side divider and text */}
-            <div className="absolute right-0 bottom-0 transform -translate-y-1/2 flex items-center -rotate-90 -mx-28">
-                <div className="w-56 h-0.5 bg-white mx-1"></div>
+            <div className="absolute right-0 bottom-0 transform -translate-y-1/2 flex items-center -rotate-90 -mx-52 -my-8">
+                <div className="w-56 h-0.5 bg-white mx-3"></div>
                 <p className="text-xs text-gray-300">Family Owned. American Made.</p>
               </div>
             </div>
