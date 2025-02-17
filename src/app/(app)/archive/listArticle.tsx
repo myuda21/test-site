@@ -68,10 +68,10 @@ const ListArticle = () => {
             className="w-full md:w-[500px] h-[300px] object-cover md:mr-6"
           />
           <div className="mt-4 md:mt-0 w-full">
-            <h2 className="text-xl font-bold">{article.title}</h2>
-            <p className="text-gray-500">{article.date}</p>
-            <p className="text-gray-700">{article.content}</p>
-            <a href="/article" className="font-bold text-xs">
+            <h2 className="text-xl font-bold mb-2 font-sans">{article.title}</h2>
+            <p className="text-blue-300 mb-2 text-sm font-sans">{article.date}</p>
+            <p className="text-gray-700 font-sans mb-1 text-sm">{article.content}</p>
+            <a href="/article" className="font-bold text-xs font-sans">
               READ MORE &gt;
             </a>
           </div>
