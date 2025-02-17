@@ -9,28 +9,29 @@ const ContactUs = () => {
       {/* NAVBAR SECTION */}
       <Navbar />
       {/* BANNER SECTION */}
-      <div className='mx-auto px-4'>
-        <div className="relative w-full h-[700px] flex justify-center text-center text-white p-14">
+      <div className='m-auto px-5'>
+      <div className="relative w-full h-[600px] mb-2 ">
           <Image
             src="/adult-room.png"
-            alt="Megan Mattress"
+            alt="Military Discount"
             layout="fill"
-            objectFit="cover"
-            className="absolute inset-0 w-full"
+            objectFit="object-none"
           />
-
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-5"></div>
-
-          {/* Content */}
-          <div className="relative z-10 px-6">
-            <h1 className="text-3xl font-semibold md:text-4xl">Contact us.</h1>
-            <p className="mt-3 text-lg md:text-xl">
-              We’d be delighted to hear from you.
-            </p>
+          <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col text-white px-6">
+            <div className="text-center md:flex md:items-center md:justify-center w-full relative">
+              <div className="md:w-1/2 my-16">
+                <h1 className="text-3xl font-sans mb-3">Contact us.</h1>
+                <p className="text-lg font-sans">We’d be delighted to hear from you.</p>
+              </div>
+              {/* Right-side divider and text */}
+              <div className="absolute right-0 bottom-0 transform -translate-y-1/2 flex items-center -rotate-90 -mx-48 -my-28 ">
+                <div className="w-56 h-0.5 bg-white mx-3"></div>
+                <p className="text-xs text-white">Family Owned.  American Made.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+        </div>
 
       <div className="max-w-5xl mx-auto px-4 py-16">
         {/* Title */}
