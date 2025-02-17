@@ -81,7 +81,7 @@ const ListArticle = () => {
       {visibleArticles < articles.length && (
         <button
           onClick={loadMore}
-          className="bg-black text-white px-6 py-2 rounded-lg mt-4 mx-auto block"
+          className="bg-black text-white px-6 py-2 rounded-3xl mt-4 mx-auto block"
         >
           LOAD MORE ARTICLES
         </button>
