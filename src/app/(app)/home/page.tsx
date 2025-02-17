@@ -11,30 +11,30 @@ const Landing = () => {
       <Navbar />
       <div className="mx-auto px-4">
         {/* BANNER SECTION */}
-        <div className="relative w-full h-[700px] flex justify-center text-center text-white py-6 mb-12">
+        <div className="relative w-full h-[500px] mb-2">
           <Image
             src="/home-menu.png"
-            alt="Megan Mattress"
+            alt="Military Discount"
             layout="fill"
-            objectFit="cover"
-            className="absolute inset-0 w-full h-full"
+            objectFit="object-none"
           />
-
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-5"></div>
-
-          {/* Content */}
-          <div className="relative z-10 px-6">
-            <h1 className="text-3xl font-semibold md:text-4xl">It’s time to sleep better.</h1>
-            <p className="mt-3 text-lg md:text-xl">
-              Our highly-rated <span className="underline">Megan Mattress</span> is comfortable & affordable.
-            </p>
-
-            {/* CTA Button */}
-            <div className="mt-6 flex flex-col items-center">
-              <div className="relative border border-white rounded-full px-6 py-3 flex items-center gap-3">
-                <span className="text-sm font-semibold">BUY NOW FOR</span>
-                <span className="text-xl font-bold">$499</span>
+          <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col text-white px-6">
+            <div className="text-center md:flex md:items-center md:justify-center w-full relative">
+              <div className="md:w-1/2 my-6">
+                <h1 className="text-3xl font-bold">It’s time to sleep better.</h1>
+                <p className="text-lg">Our highly-rated Megan Mattress is comfortable & affordable.</p>
+                <br />
+                <button
+                  type="button"
+                  className="flex items-center justify-center border text-white bg-transparent font-medium rounded-full text-sm px-5 py-2.5 mx-auto"
+                >
+                  SHOP ACCESSORIES <span className="mx-3"> | </span> <ArrowRight />
+                </button>
+              </div>
+              {/* Right-side divider and text */}
+              <div className="absolute right-0 bottom-0 transform -translate-y-1/2 flex items-center -rotate-90 -mx-48 -my-28 ">
+                <div className="w-56 h-0.5 bg-white mx-3"></div>
+                <p className="text-xs text-white">Handcrafted Mattresses</p>
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@ const Landing = () => {
             <p className="mt-4 text-gray-700">
               Sheets that are more than just soft. They feel so good, you never want to get up.
             </p>
-            
+
             {/* CTA Button */}
             <div className='relative my-4' style={{ paddingTop: '0.001rem', paddingBottom: '0.001rem', }}> {/* GABOLEH DIGANGGU GUGAT SUSAH MENYESUAIKANNYA */}
               <div className='absolute border-4 border-white z-5 w-3/4 h-full'></div>
