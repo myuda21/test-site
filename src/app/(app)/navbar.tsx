@@ -83,19 +83,30 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden pb-4 px-4 space-y-2">
-          <Link href="/mattresses" className="block text-neutral-500 hover:bg-gray-100 py-2">
+          <button onClick={toggleMattressDropdown} className="block text-neutral-500 hover:bg-gray-100 py-2 w-full text-left">
             Mattresses
-          </Link>
-          <Link href="/accessories" className="block text-neutral-500 hover:bg-gray-100 py-2">
-            Accessories
-          </Link>
-          <Link href="/platforms" className="block text-neutral-500 hover:bg-gray-100 py-2">
-            Platforms
-          </Link>
-          <Link href="/resources" className="block text-neutral-500 hover:bg-gray-100 py-2">
+          </button>
+          {isMattressOpen && (
+            <div className="pl-4">
+              <Link href="#" className="block text-neutral-500 hover:bg-gray-100 py-2">Classic Hybrids</Link>
+              <Link href="/mattresses" className="block text-neutral-500 hover:bg-gray-100 py-2">Luxury Firm</Link>
+              <Link href="#" className="block text-neutral-500 hover:bg-gray-100 py-2">Guest Beds</Link>
+              <Link href="#" className="block text-neutral-500 hover:bg-gray-100 py-2">Kids Beds</Link>
+              <Link href="#" className="block text-neutral-500 hover:bg-gray-100 py-2">Certified Organic</Link>
+            </div>
+          )}
+          <Link href="/accessories" className="block text-neutral-500 hover:bg-gray-100 py-2">Accessories</Link>
+          <Link href="/platforms" className="block text-neutral-500 hover:bg-gray-100 py-2">Platforms</Link>
+          <button onClick={toggleFeaturesDropdown} className="block text-neutral-500 hover:bg-gray-100 py-2 w-full text-left">
             Resources
-          </Link>
-
+          </button>
+          {isFeaturesOpen && (
+            <div className="pl-4">
+              <Link href="/archive" className="block text-neutral-500 hover:bg-gray-100 py-2">Archive</Link>
+              <Link href="/feature2" className="block text-neutral-500 hover:bg-gray-100 py-2">Feature 2</Link>
+              <Link href="/feature3" className="block text-neutral-500 hover:bg-gray-100 py-2">Feature 3</Link>
+            </div>
+          )}
           {/* Phone and Cart in Mobile */}
           <div className="flex items-center text-sm text-neutral-500 py-2">
             <Phone size={20} color="#BCB7B5" className="mr-2" />
