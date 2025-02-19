@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronRight, ChevronLeft } from "lucide-react";
+import Image from "next/image";
 
 const comments = [
     {
@@ -44,7 +45,12 @@ const CommentSection = () => {
 
     return (
         <div className="relative bg-pink-50 py-12 px-6 text-center overflow-hidden w-full h-[400px] flex justify-center items-center">
-
+            <Image
+                        src="/decoration.png"
+                        alt="Military Discount"
+                        layout="fill"
+                        className="object-scale-down"
+                      />
             <div className="relative z-10 text-center">
                 {/* Stars */}
                 <div className="text-yellow-500 text-xl mb-4">⭐⭐⭐⭐⭐</div>
