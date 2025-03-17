@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="bg-white py-2 px-4 z-50 relative">
       <div className="mx-auto flex justify-between items-center">
         <Link href="/home">
-          
+          <Image src="/lorem-ipsum.png" alt="Logo" width={50} height={50} />
         </Link>
 
         <div className="md:hidden flex items-center">

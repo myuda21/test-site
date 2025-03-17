@@ -112,7 +112,7 @@ const Footer = () => {
 
                 {/* Copyright */}
                 <p className="text-center text-sm mt-4">
-                    © 2016 Quality Sleep Shop 1519 W. 55th Street La Grange Highlands, Illinois 60525
+                    © 2016 Test
                 </p>
             </div>
         </div>

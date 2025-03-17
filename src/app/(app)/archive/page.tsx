@@ -25,7 +25,7 @@ const Article = () => {
                     <div className="absolute inset-0 flex flex-col items-center justify-center z-10 px-6">
                         <h1 className="text-3xl font-mono md:text-4xl">Bedhead Blog</h1>
                         <p className="mt-3 text-lg md:text-xl font-mono">
-                            News and updates from Quality Sleep Shop.
+                            News and updates from Test Sites
                         </p>
                     </div>
                 </div>

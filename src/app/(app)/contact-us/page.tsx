@@ -35,7 +35,6 @@ const ContactUs = () => {
 
       <div className="max-w-5xl mx-auto px-4 py-16">
         {/* Title */}
-        <h2 className="text-2xl font-semibold mb-10">Quality Sleep Shop</h2>
 
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-12">
           {/* Contact Information */}

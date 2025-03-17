@@ -93,7 +93,6 @@ const reviews = [
 
       <div className="flex items-center justify-between p-16 gap-16">
         <div className="max-w-lg">
-          <h1 className="text-xl font-bold mb-5">Meet the Quality Sleep Shop™ Team</h1>
           <p className="text-gray-700">
             The owners, Tim Masters and his wife, Cindy, live with their five children less than a mile from the shop and are heavily invested in the community. Bob Brixie first opened the shop in 1969 - nearly 50 years ago! Tim began working for the company in 1990 and soon realized he had found his calling.
           </p>

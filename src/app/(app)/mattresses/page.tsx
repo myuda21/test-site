@@ -7,10 +7,10 @@ import FilterBar from "./filterBar";
 import React, { useState, useEffect } from "react";
 
 const products = [
-    { id: 1, name: "Katherine Latex", price: 949, image: "/product.png", rating: 4.5, reviews: 14, filters: ["Sleep Cooler", "Firm Seating Edge","Testing"] },
-    { id: 2, name: "Grace Firm", price: 949, image: "/product.png", rating: 4.5, reviews: 14, filters: ["Sleep Cooler"] },
-    { id: 3, name: "Kelly", price: 899, image: "/product.png", rating: 3, reviews: 10, filters: ["Organic"] },
-    { id: 4, name: "Harmony", price: 899, image: "/product.png", rating: 5, reviews: 10, filters: ["Firm Seating Edge"] },
+    { id: 1, name: "Katherine", price: 949, image: "/kasur.png", rating: 4.5, reviews: 14, filters: ["Sleep Cooler", "Firm Seating Edge","Testing"] },
+    { id: 2, name: "Grace Firm", price: 949, image: "/kasur.png", rating: 4.5, reviews: 14, filters: ["Sleep Cooler"] },
+    { id: 3, name: "Kelly", price: 899, image: "/kasur.png", rating: 3, reviews: 10, filters: ["Organic"] },
+    { id: 4, name: "Harmony", price: 899, image: "/kasur.png", rating: 5, reviews: 10, filters: ["Firm Seating Edge"] },
     { id: 5, name: "Celeste", price: 899, image: "/product.png", rating: 0, reviews: 10, filters: ["Luxury"] },
 ];
 
