@@ -11,30 +11,34 @@ const Landing = () => {
       <Navbar />
       <div className="mx-auto px-4">
         {/* BANNER SECTION */}
-        <div className="relative w-full h-[500px] mb-2">
-          <Image
-            src="/home-menu.png"
-            alt="Military Discount"
-            layout="fill"
-            objectFit="object-none"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col text-white px-6">
-            <div className="text-center md:flex md:items-center md:justify-center w-full relative">
-              <div className="md:w-1/2 my-6">
-                <h1 className="text-3xl font-bold">It’s time to sleep better.</h1>
-                <p className="text-lg">Our highly-rated Megan Mattress is comfortable & affordable.</p>
-                <br />
-                <button
-                  type="button"
-                  className="flex items-center justify-center border text-white bg-transparent font-medium rounded-full text-sm px-5 py-2.5 mx-auto"
-                >
-                  SHOP ACCESSORIES <span className="mx-3"> | </span> <ArrowRight />
-                </button>
-              </div>
-              {/* Right-side divider and text */}
-              <div className="absolute right-0 bottom-0 transform -translate-y-1/2 flex items-center -rotate-90 -mx-48 -my-28 ">
-                <div className="w-56 h-0.5 bg-white mx-3"></div>
-                <p className="text-xs text-white">Handcrafted Mattresses</p>
+        <div className="mx-auto px-4">
+          {/* BANNER SECTION */}
+          <div className="relative w-full h-[500px] mb-2">
+            <Image
+              src="/kasur.png"
+              alt="Military Discount"
+              layout="fill"
+              objectFit="contain"
+              className="w-full h-full bg-white"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col text-white px-6">
+              <div className="text-center md:flex md:items-center md:justify-center w-full relative">
+                <div className="md:w-1/2 my-6">
+                  <h1 className="text-3xl font-bold">It’s time to sleep better.</h1>
+                  <p className="text-lg">Our highly-rated Megan Mattress is comfortable & affordable.</p>
+                  <br />
+                  <button
+                    type="button"
+                    className="flex items-center justify-center border border-white text-white bg-transparent font-medium rounded-full text-sm px-5 py-2.5 mx-auto hover:bg-white hover:text-black transition"
+                  >
+                    SHOP ACCESSORIES <span className="mx-3"> | </span> <ArrowRight />
+                  </button>
+                </div>
+                {/* Right-side divider and text */}
+                <div className="absolute right-0 bottom-1/2 transform translate-x-1/2 flex items-center rotate-90 -mb-36">
+                  <div className="w-60 h-0.5 bg-white mx-3"></div>
+                  <p className="text-xs text-white">Handcrafted Mattresses</p>
+                </div>
               </div>
             </div>
           </div>
