@@ -31,16 +31,16 @@ const AboutUs = () => {
                 <section className="container mx-auto px-6 py-12">
                     <h2 className="text-2xl font-semibold">Family Owned</h2>
                     <p className="text-gray-700 mt-4">
-                        The owners, Tim Masters and his wife, Cindy, live with their five children less than a mile from the shop and are heavily invested in the community. Bob Brixie first opened the shop in 1969 - nearly 50 years ago! Tim began working for the company in 1990 and soon realized he had found his calling.
+                       Dimulai dari garasi, sekeluarga yang memiliki ide untuk memulai usaha kasur pada tahun 1980.
                     </p>
                     <br />
                     <p>
-                        He purchased the company from his mentor, Mr. Brixie, in 1995. Over the last 20+ years, Tim has grown and expanded the company to offer the latest innovations in mattresses, including memory foam, all natural latex and pocketed coil sleep systems.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae molestias quaerat in! Necessitatibus magni similique amet! Quos, saepe ipsam repellat numquam illum iusto ab vero laudantium eum illo libero nihil?
                     </p>
                 </section>
 
                 {/* American Made & Highest Quality Section */}
-                <section className="relative pb-52 pt-8">
+                <section className="relative pb-52">
                     <div className="relative w-full h-[400px]">
                         <Image
                             src="/about-us-banner2.png"
@@ -53,8 +53,8 @@ const AboutUs = () => {
                     </div>
                     <div className="relative md:absolute md:top-[70%] left-1/2 transform md:-translate-x-1/2 w-11/12 max-w-5xl bg-white p-8 shadow-lg flex flex-col md:flex-row gap-8 rounded-lg z-10 -mt-10">
                         <div className="flex-1">
-                            <h2 className="text-2xl font-semibold">American Made</h2>
-                            <p className="text-gray-600 mt-2">Our mattresses are handcrafted at our factory in La Grange Highlands, IL. Take a virtual tour of our production facility!</p>
+                            <h2 className="text-2xl font-semibold">Indonesian Made</h2>
+                            <p className="text-gray-600 mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium autem culpa vel at quia totam, consequatur obcaecati iste libero ipsam ut harum veritatis voluptate modi voluptates minus consectetur! Reprehenderit, asperiores?</p>
                             <div className='relative my-4' style={{ paddingTop: '0.001rem', paddingBottom: '0.001rem', }}> {/* GABOLEH DIGANGGU GUGAT SUSAH MENYESUAIKANNYA */}
                                 <div className='absolute border-4 border-white z-5 w-3/4 h-full'></div>
                                 <button className="border rounded-full border-black p-2 w-3/4 flex justify-center my-0.5">
@@ -86,7 +86,7 @@ const AboutUs = () => {
 
                     {/* Konten di Tengah */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center z-10 px-6">
-                        <h1 className="text-3xl font-semibold md:text-4xl">Family owned. American made. Highest Quality</h1>
+                        <h1 className="text-3xl font-semibold md:text-4xl">Family owned. Indonesian made. Highest Quality</h1>
                     </div>
                 </div>
             </div>

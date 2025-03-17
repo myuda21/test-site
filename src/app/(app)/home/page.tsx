@@ -24,8 +24,8 @@ const Landing = () => {
             <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col text-white px-6">
               <div className="text-center md:flex md:items-center md:justify-center w-full relative">
                 <div className="md:w-1/2 my-6">
-                  <h1 className="text-3xl font-bold">It’s time to sleep better.</h1>
-                  <p className="text-lg">Our highly-rated Megan Mattress is comfortable & affordable.</p>
+                  <h1 className="text-3xl font-bold">It’s time to sleep.</h1>
+                  <p className="text-lg">Sleep Time with our bed</p>
                   <br />
                   <button
                     type="button"

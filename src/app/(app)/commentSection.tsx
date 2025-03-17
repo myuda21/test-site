@@ -7,28 +7,13 @@ import Image from "next/image";
 const comments = [
     {
         id: 1,
-        text: "So comfortable for all types of sleepers. Definitely worth the price!",
-        author: "Alya from Brooklyn, NY",
+        text: "Kasurnya terasa nyaman",
+        author: "Shinta, ID",
     },
     {
         id: 2,
-        text: "Best mattress I’ve ever had! Amazing quality.",
-        author: "John from LA, CA",
-    },
-    {
-        id: 3,
-        text: "Incredible softness and support, I sleep so much better now.",
-        author: "Emily from Chicago, IL",
-    },
-    {
-        id: 4,
-        text: "I was skeptical at first, but this mattress is life-changing!",
-        author: "Mike from Austin, TX",
-    },
-    {
-        id: 5,
-        text: "Would definitely buy again. Great product and fast delivery.",
-        author: "Sarah from Miami, FL",
+        text: "Kasurnya terasa mantap.",
+        author: "Rafi, ID",
     },
 ];
 

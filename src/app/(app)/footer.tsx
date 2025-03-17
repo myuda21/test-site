@@ -84,9 +84,9 @@ const Footer = () => {
                         {/* Contact Section */}
                         <div>
                             <h3 className="text-lg font-bold mb-4 border-b border-gray-700 pb-2"><a href="/contact-us" className="hover:underline">Contact Us</a></h3>
-                            <p className="mb-1">(708) 246-2244</p>
-                            <p className="mb-1"><a href="#" className="hover:underline">1519 W. 55th St.</a></p>
-                            <p><a href="#" className="hover:underline">La Grange Highlands, IL 60525</a></p>
+                            <p className="mb-1">(021) 1222319</p>
+                            <p className="mb-1"><a href="#" className="hover:underline">Rawamangun</a></p>
+                            <p><a href="#" className="hover:underline">Jakarta, Indonesia</a></p>
                             <div className="flex justify-center md:justify-start gap-4 mt-4">
                                 <a href="#" className="hover:opacity-75">
                                     <Facebook size={24} />
