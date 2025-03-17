@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="bg-white py-2 px-4 z-50 relative">
       <div className="mx-auto flex justify-between items-center">
         <Link href="/home">
-          <Image src="/logoQSS.jpg" alt="Logo" width={120} height={50} />
+          
         </Link>
 
         <div className="md:hidden flex items-center">
