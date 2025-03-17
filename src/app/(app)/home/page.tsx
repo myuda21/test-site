@@ -47,7 +47,7 @@ const Landing = () => {
         {/* CARD ITEM SECTION */}
         <div className="max-w-6xl mx-auto px-4 py-8 mb-12">
           <div className="grid grid-cols-3 gap-4 mt-6">
-            <CardItem image="/shop-adult.png" alt="Shop Adult" text="Shop Adult" />
+            <CardItem image="/kasur2.png" alt="Shop Adult" text="Shop Adult" />
             <CardItem image="/shop-kids.png" alt="Shop Kids" text="Shop Kids" />
             <CardItem image="/shop-guest-room.png" alt="Shop Guest Room" text="Shop Guest Room" />
           </div>

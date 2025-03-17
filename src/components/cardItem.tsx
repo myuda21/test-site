@@ -10,7 +10,7 @@ interface CardItemProps {
   const CardItem: React.FC<CardItemProps> = ({ image, alt, text }) => (
     <div className="relative">
       <Image src={image} alt={alt} width={400} height={250} />
-      <span className="absolute bottom-4 left-4 text-white font-bold">{text} →</span>
+      <span className="absolute bottom-4 left-4 text-black font-bold">{text} →</span>
     </div>
   );
 
