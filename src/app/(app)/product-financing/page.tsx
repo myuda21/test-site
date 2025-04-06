@@ -9,15 +9,22 @@ const ProductFinancing = () => {
       <Navbar />
       {/* Hero Section */}
       <div className="relative w-full h-[500px]">
-        <Image src="/home-menu.png" alt="Product Financing" layout="fill" objectFit="cover" />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-4">
-          <h1 className="text-4xl font-bold">Product Financing</h1>
-          <p className="text-lg mt-2">Buy now, pay over time.</p>
-        </div>
-        <div className="absolute right-4 top-1/2 transform -translate-y-1/2 text-xs text-gray-300 rotate-90">
-          Family Owned. American Made.
-        </div>
-      </div>
+  <Image
+    src="/kasur.png"
+    alt="Product Financing"
+    width={1920}
+    height={500}
+    className="w-full h-full object-cover"
+  />
+  <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-4">
+    <h1 className="text-4xl font-bold">Product Financing</h1>
+    <p className="text-lg mt-2">Buy now, pay over time.</p>
+  </div>
+  <div className="absolute right-4 top-1/2 transform -translate-y-1/2 text-xs text-gray-300 rotate-90">
+    Family Owned. American Made.
+  </div>
+</div>
+
 
       {/* Two Ways to Qualify */}
       <div className="max-w-4xl mx-auto text-center py-16 px-4">
