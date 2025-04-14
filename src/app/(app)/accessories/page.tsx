@@ -1,9 +1,7 @@
 "use client";
 
 import Navbar from "../navbar";
-import Image from "next/image";
 import Footer from "../footer";
-import CommentSection from "../commentSection";
 import React, { useState, useEffect } from "react";
 
 const Mattresses = () => {
