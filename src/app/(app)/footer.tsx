@@ -1,6 +1,6 @@
 import { Facebook, Instagram } from "lucide-react";
 import CommentSection from "./commentSection";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
