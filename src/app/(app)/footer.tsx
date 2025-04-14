@@ -15,17 +15,17 @@ const Footer = () => {
         </div>
 
         {/* Image Section */}
-        <div className="relative flex z-20 -mt-12">
+        {/* <div className="relative flex z-20 -mt-12">
           <Image
             src="/mix-ins.png"
             alt="Handcrafted Mattress"
             width={1000} // Provide actual width
             height={500} // Provide actual height
             className="w-[90%] h-auto mx-auto"
-          />
+          /> */}
 
           {/* Text Overlay */}
-          <div className="absolute inset-0 flex items-center justify-center sm:justify-end bg-black/30 w-[90%] h-auto mx-auto p-4">
+          {/* <div className="absolute inset-0 flex items-center justify-center sm:justify-end bg-black/30 w-[90%] h-auto mx-auto p-4">
             <div className="text-white text-center sm:text-right p-4 w-full sm:max-w-[40%]">
               <h2 className="text-lg sm:text-xl font-semibold">Handcrafted Mattresses</h2>
               <p className="mt-2 text-sm sm:text-lg">
@@ -36,7 +36,7 @@ const Footer = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* JOIN OUR NEWSLETTER SECTION */}
@@ -77,7 +77,7 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-bold mb-4 border-b border-gray-700 pb-2">Resources</h3>
               <ul className="space-y-2">
-                <li><Link href="/" className="hover:underline">FAQ&apos;s</Link></li>
+                {/* <li><Link href="/" className="hover:underline">FAQ's</Link></li> */}
                 <li><Link href="/about-us" className="hover:underline">About us</Link></li>
                 <li><Link href="/military-discount" className="hover:underline">Military Discount</Link></li>
                 <li><Link href="/promotionsV2" className="hover:underline">Promotions</Link></li>
