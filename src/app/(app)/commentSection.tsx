@@ -42,7 +42,7 @@ const CommentSection = () => {
 
                 {/* Comment Content */}
                 <p className="text-lg font-semibold text-gray-900 italic">
-                    "{comments[currentIndex].text}"
+                    &quot;{comments[currentIndex].text}&quot;
                 </p>
                 <p className="text-sm text-gray-700 mt-2">{comments[currentIndex].author}</p>
             </div>

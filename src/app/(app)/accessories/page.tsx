@@ -2,7 +2,8 @@
 
 import Navbar from "../navbar";
 import Footer from "../footer";
-import React, { useState, useEffect } from "react";
+import React from "react";
+import Image from "next/image";
 
 const Mattresses = () => {
     const products = [
@@ -13,38 +14,24 @@ const Mattresses = () => {
         { id: 5, name: "Kelly", price: 899, image: "/product.png", rating: 0, reviews: 0 },
     ];
 
-    const [filter, setFilter] = useState<string>("All");
-    const [sort, setSort] = useState<string>("price");
-    const [filteredProducts, setFilteredProducts] = useState(products);
-    const [isLoading, setIsLoading] = useState<boolean>(false);
-
-    useEffect(() => {
-        setIsLoading(true); // Set loading state saat filter berubah
-        setTimeout(() => {
-            const updatedProducts = filter && filter !== "All"
-                ? products.filter((p) => p.name.includes(filter))
-                : products;
-            setFilteredProducts(updatedProducts);
-            setIsLoading(false); // Matikan loading setelah data diproses
-        }, 500); // Delay 500ms agar ada efek loading
-    }, [filter]);
-
-    const sortedProducts = [...filteredProducts].sort((a, b) =>
-        sort === "price" ? a.price - b.price : b.rating - a.rating
-    );
-
     return (
         <div>
-            {/* NAVBAR SECTION */}
             <Navbar />
             <div className="max-w-6xl mx-auto px-4 py-8">
-                {/* TODO: add section here */}
-                {/* COMMENT SECTION */}
                 <div className="relative flex-col">
+                    <h2 className="text-2xl font-bold mb-4">Accessories</h2>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        {products.map((product) => (
+                            <div key={product.id} className="border p-4 rounded shadow-sm">
+                                <Image src={product.image} alt={product.name} className="w-full h-40 object-cover" />
+                                <h3 className="text-lg font-semibold mt-2">{product.name}</h3>
+                                <p className="text-gray-600">${product.price}</p>
+                                <p className="text-sm text-yellow-500">Rating: {product.rating} ({product.reviews} reviews)</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
-
-            {/* FOOTER SECTION */}
             <Footer />
         </div>
     );

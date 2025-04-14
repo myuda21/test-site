@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import { useState } from 'react';
 
 interface Promotion {
@@ -26,7 +27,7 @@ const PromotionCard = ({ promo }: { promo: Promotion }) => {
                 onMouseEnter={() => setShowDetails(true)}
                 onMouseLeave={() => setShowDetails(false)}
             >
-                <img
+                <Image
                     src={promo.image}
                     alt={promo.description}
                     className="w-full h-full object-cover"

@@ -60,7 +60,7 @@ const ProductFinancing = () => {
       {/* Financing Details */}
       <div className="max-w-4xl mx-auto text-center py-16 px-4">
         <h2 className="text-xl font-semibold">What Is Needed In Order To Apply?</h2>
-        <p className="mt-4">Affirm will simply ask you for your name, email address, your phone number, birthday, and the last 4 digits of your social security number in order to make a "soft pull" of your credit, which will not affect your credit score.</p>
+        <p className="mt-4">Affirm will simply ask you for your name, email address, your phone number, birthday, and the last 4 digits of your social security number in order of your credit, which will not affect your credit score.</p>
         <div className="flex justify-center items-center mt-6">
           <Image src="/Bitmap.png" alt="Affirm" width={400} height={50} />
         </div>

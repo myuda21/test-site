@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const articles = [
   {
@@ -62,11 +63,16 @@ const ListArticle = () => {
           key={index}
           className="mb-10 flex flex-col md:flex-row items-center md:items-start"
         >
-          <img
-            src={article.image}
-            alt={article.title}
-            className="w-full md:w-[500px] h-[300px] object-cover md:mr-6"
-          />
+          <div className="relative w-full md:w-[500px] h-[300px] md:mr-6">
+            <Image
+              src={article.image}
+              alt={article.title}
+              fill
+              className="object-cover rounded"
+              sizes="(max-width: 768px) 100vw, 500px"
+              priority={index < 3} // Optional: Prioritize first few images for faster LCP
+            />
+          </div>
           <div className="mt-4 md:mt-0 w-full">
             <h2 className="text-xl font-bold mb-2 font-sans">{article.title}</h2>
             <p className="text-blue-300 mb-2 text-sm font-sans">{article.date}</p>
