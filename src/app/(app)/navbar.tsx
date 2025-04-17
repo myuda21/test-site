@@ -59,7 +59,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-6">
           <div className="flex items-center text-sm text-neutral-500">
             <Phone size={20} color="#BCB7B5" className="mr-2" />
-            708.246.2224
+            01234567
           </div>
           <div className="flex items-center bg-green-100 text-green-700 px-3 py-1 rounded-full">
             <span className="text-sm">$0.00</span>
@@ -95,7 +95,7 @@ const Navbar = () => {
           )}
           <div className="flex items-center text-sm text-neutral-500 py-2">
             <Phone size={20} color="#BCB7B5" className="mr-2" />
-            708.246.2224
+            01234567
           </div>
           <div className="flex items-center bg-green-100 text-green-700 px-3 py-1 rounded-full">
             <span className="text-sm">$0.00</span>
