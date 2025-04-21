@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-gray-900 text-white py-6 opacity-95">
+      <div className="bg-gray-900 text-white py-6">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-3 text-center md:text-left gap-8">
             {/* Shop Section */}
